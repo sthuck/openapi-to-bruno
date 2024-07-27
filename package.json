@@ -1,0 +1,39 @@
+{
+  "name": "openapi-to-bruno",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@oclif/core": "^4.0.15",
+    "@usebruno/lang": "^0.15.0",
+    "@usebruno/schema": "^0.10.0",
+    "js-yaml": "^4.1.0",
+    "lodash": "^4.17.21",
+    "nanoid": "^5.0.7"
+  },
+  "bin": {
+    "openapi-to-bruno": "./bin/run.js"
+  },
+  "oclif": {
+    "bin": "openapi-to-bruno",
+    "commands": "./src/commands",
+    "dirname": "openapi-to-bruno",
+    "topicSeparator": " "
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.8.0",
+    "@types/node": "^18.19.42",
+    "eslint": "^9.8.0",
+    "eslint-config-prettier": "^9.1.0",
+    "globals": "^15.8.0",
+    "prettier": "^3.3.3",
+    "ts-node": "^10.9.2"
+  }
+}
